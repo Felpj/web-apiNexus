@@ -17,7 +17,6 @@ export function HomePage() {
   const [selectedCrypto, setSelectedCrypto] = useState<string | undefined>();
   const [amount, setAmount] = useState<number>(0);
   const [conversionResult, setConversionResult] = useState<{ convertedValueBRL: number; convertedValueUSD: number } | null>(null);
-  const [favoriteCryptos, setFavoriteCryptos] = useState<string[]>([]);
   const [refreshHistory, setRefreshHistory] = useState<boolean>(false);
 
   const { removeToken } = useAuth();

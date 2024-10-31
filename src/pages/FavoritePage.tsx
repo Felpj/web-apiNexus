@@ -21,7 +21,7 @@ export function FavoritePage() {
   const [selectedCrypto, setSelectedCrypto] = useState<string | undefined>();
   const [favoriteCryptos, setFavoriteCryptos] = useState<Crypto[]>([]);
   const [removing, setRemoving] = useState<{ [key: string]: boolean }>({});
-  const [loading, setLoading] = useState<boolean>(false); // Estado de carregamento
+  const [  ,setLoading] = useState<boolean>(false); // Estado de carregamento
 
   
 

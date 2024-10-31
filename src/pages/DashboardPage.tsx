@@ -10,6 +10,7 @@ export function DashboardPage() {
   const [selectedCrypto, setSelectedCrypto] = useState<string>();
   const [amount, setAmount] = useState<number>(0);
   const [conversionResult, setConversionResult] = useState<{ convertedValueBRL: number; convertedValueUSD: number } | null>(null);
+  const [refreshHistory] = useState<boolean>(false);
 
   const axiosAuth = useAxiosAuth();
 
@@ -58,7 +59,7 @@ export function DashboardPage() {
           <p>Valor em USD: {conversionResult.convertedValueUSD.toFixed(2)}</p>
         </div>
       )}
-      <ConversionHistoryTable refresh={refreshHistory}/>
+      <ConversionHistoryTable refresh={refreshHistory} />
     </div>
   );
 }
