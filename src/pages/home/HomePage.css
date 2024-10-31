@@ -1,0 +1,117 @@
+/* HomePage.css */
+
+/* Layout Geral */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.homepage-layout {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+.homepage-header {
+  background-color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.homepage-header h2 {
+  color: #fe6000;
+  margin: 0;
+}
+
+/* Botão de Logout */
+.logout-button {
+  background-color: #fe6000 !important;
+  border-color: #fe6000 !important;
+}
+
+/* Sidebar de Navegação */
+.homepage-sider {
+  background-color: #1e293b;
+  padding-top: 24px;
+  min-height: 100%;
+}
+
+.homepage-menu {
+  height: 100%;
+  border-right: 0;
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+/* Conteúdo Principal */
+.homepage-content {
+  display: flex;
+  flex: 1; /* Preenche o restante da altura disponível */
+  padding: 24px;
+}
+
+.homepage-content-inner {
+  padding: 24px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  width: 100%; /* Adiciona responsividade ao conteúdo */
+  box-sizing: border-box;
+}
+
+/* Formulário de Conversão */
+.conversion-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+/* Resultados da Conversão */
+.conversion-result {
+  margin-bottom: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabela de Histórico de Conversões */
+.history-table-container {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Favoritos */
+.favorites-section {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .conversion-form {
+    flex-direction: column;
+  }
+
+  .homepage-sider {
+    padding-top: 16px;
+  }
+
+  .homepage-content {
+    padding: 16px;
+  }
+}

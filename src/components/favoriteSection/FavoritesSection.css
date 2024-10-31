@@ -1,0 +1,28 @@
+/* src/components/favoriteSection/FavoritesSection.css */
+
+.favorites-section-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-table {
+  margin-top: 20px;
+}
+
+.no-favorites-alert {
+  margin-top: 20px;
+}
+
+.favorites-section-container .ant-select {
+  width: 100%;
+}
+
+.favorites-section-container .ant-select-selector {
+  height: 40px;
+}
+
+.favorites-section-container .ant-table {
+  margin-top: 20px;
+}
